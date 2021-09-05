@@ -1,0 +1,58 @@
+.sp-thongbao {
+  color: red;
+  margin-left: 2px; 
+  display: none;
+}
+
+#SapXepGiam{
+	display: none;
+}
+
+#content{
+	width: 100%;
+	background: #74ebd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.myCardHeader, .myCardFooter{
+	background-color: transparent;       
+}
+
+#tableDanhSach .tableDS{
+  padding: 20px 2px;
+}
+
+.showTable{
+  display: block!important;
+  opacity: 1!important;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+
+}
+.showTable .modal-dialog {
+      /* -webkit-transform: translate(0,0); */
+      transform: translate(0,0)!important
+}
+.showTable .modal-content{
+  animation: effectTable 0.5s ease;
+}
+
+.open_modal{
+  overflow: hidden;
+}
+/* Hiệu ứng cho viewTable lần 2 */
+@keyframes effectTable{
+    from{
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
